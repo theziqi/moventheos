@@ -1,0 +1,145 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view id="toplist">请填写你的体测项目各项预估成绩</view>
+
+  <!--  <i-panel class="inputform">
+    <view class="selectrow">
+      <i-row>
+        <i-col span="6">
+          <view class="sexcell">性别：</view>
+        </i-col>
+        <i-col span="18">
+          <i-radio-group current="{{Usex}}" bindchange="handleSexChange">
+            <i-radio class='sexradio' wx:for="{{sex}}" position="left" wx:key="{{item.id}}" value="{{item.name}}">
+            </i-radio>
+          </i-radio-group>
+        </i-col>
+      </i-row>
+    </view>
+    <i-input title="1000/800米："></i-input>
+    <i-input title="立定跳远："></i-input>
+    <i-input title="引体向上/仰卧起坐："></i-input>
+    <i-input title="身高："></i-input>
+    <i-input title="体重："></i-input>
+  </i-panel>
+  <i-button type="primary" bind:click="handleClick">提交分析</i-button>
+-->
+
+  <form>
+
+
+    <view style='background:white;border-radius:10px;width:650rpx;margin:auto;'>
+    <view class='culist'>
+      <view class="cu-form-group margin-top">
+        <view class='cutitle'>性别</view>
+        <picker bindchange="sexPickerChange" value="{{userSex}}" range="{{sexPicker}}">
+          <view class="picker">
+            {{userSex?sexPicker[userSex]:'男'}}
+          </view>
+        </picker>
+      </view>
+
+      
+      <view class="cu-form-group">
+        <view class='cutitle'>年级</view>
+        <picker bindchange="gradePickerChange" value="{{userGrade}}" range="{{gradePicker}}">
+          <view class="picker">
+            {{userGrade?gradePicker[userGrade]:'大一'}}
+          </view>
+        </picker>
+      </view>
+
+      <view class="cu-form-group">
+        <view class='cutitle'>目标成绩（百分制）</view>
+        <view style="padding-left: 10px;text-align: right;">
+          <input value="{{ aimScore }}" type='number'/>
+        </view>
+      </view>
+
+      <view class="cu-form-group">
+        <view class='cutitle'>考试时间</view>
+        <picker mode="date" value="{{examDate}}" bindchange="examDateChange">
+          <view class="picker">
+            {{examDate}}
+          </view>
+        </picker>
+      </view>
+
+      <view class="cu-form-group">
+        <view class='cutitle'>身高</view>
+        <view style="padding-left: 10px;text-align: right;">
+          <input value="{{ heightNum }}" type='number'/>
+        </view>
+        <view>厘米</view>
+      </view>
+
+      <view class="cu-form-group">
+        <view class='cutitle'>体重</view>
+        <view style="padding-left: 10px;text-align: right;">
+          <input value="{{ weightNum }}" type='number' />
+        </view>
+        <view>千克</view>
+      </view>
+
+      <view class="cu-form-group">
+        <view class='cutitle'>肺活量</view>
+        <view style="padding-left: 10px;text-align: right;">
+          <input value="{{ lungNum }}" type='number'/>
+        </view>
+        <view>毫升</view>
+      </view>
+
+      <view class="cu-form-group">
+        <view class='cutitle'>1000/800米</view>
+        <picker mode="time" value="{{longrunTime}}" start="02:00" end="06:00" bindchange="longrunTimeChange">
+          <view class="picker">
+            {{longrunTime}}
+          </view>
+        </picker>
+      </view>
+
+
+
+      <view class="cu-form-group">
+        <view class='cutitle'>引体/仰卧</view>
+        <view style="padding-left: 10px;text-align: right;">
+          <input value="{{ cNum }}" type='number'/>
+        </view>
+        <view>个</view>
+      </view>
+
+      <view class="cu-form-group">
+        <view class='cutitle'>立定跳远</view>
+        <view style="padding-left: 10px;text-align: right;">
+          <input value="{{ dNum }}" type='number'/>
+        </view>
+        <view>厘米</view>
+      </view>
+
+      <view class="cu-form-group">
+        <view class='cutitle'>体前屈</view>
+        <view style="padding-left: 10px;text-align: right;">
+          <input value="{{ eNum }}" type='digit' />
+        </view>
+        <view>厘米</view>
+      </view>
+
+      <view class="cu-form-group">
+        <view class='cutitle'>50米</view>
+        <view style="padding-left: 10px;text-align: right;">
+          <input value="{{ fNum }}" type='digit' />
+        </view>
+        <view>秒</view>
+      </view>
+    
+    </view>
+    </view>
+
+
+    <view class='margin-tb-sm text-center'>
+      <button class='cu-btn round bg-gradual-green shadow lg' bindtap='toAna'>点击查看专业分数评测</button>
+    </view>
+
+  </form>
+</view>

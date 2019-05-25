@@ -1,0 +1,9 @@
+<!--miniprogram/pages/about/index.wxml-->
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于我们</view>
+  <view class='text-content'>
+    <view class='margin-top-sm'>大家好啊~这是一款帮助各位合理规划锻炼，完成体测目标大计的小工具。</view>
+    <view class='margin-top-sm'>如果你喜欢的话不妨向周围的同学朋友推荐这个工具哦。我们十分感谢！</view>
+  </view>
+  <view class='padding text-center'><button class='cu-btn bg-green' bindtap='clearCache'>点击清除本地缓存</button></view>
+</view>

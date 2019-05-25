@@ -1,0 +1,104 @@
+/* miniprogram/pages/analyses/index.wxss */
+page{
+  display: block;  
+  min-height: 100%;
+  background-color: #594d61;
+  z-index: -1;
+}
+
+
+.taglist{
+position: absolute;
+width: 600rpx;
+margin: 15rpx 70rpx;
+z-index: 20;
+}
+
+.tag{
+  margin-right: 25rpx;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 70%;
+}
+
+.cc{
+  position: absolute;
+  top: 245rpx;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.cg{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 855rpx;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  background-color: #594d61;
+}
+
+.ct{
+  z-index: 999;
+}
+
+#topTip{
+  background-color: #2cb57f;
+  color: #fff;
+  width: 650rpx;
+  border-radius: 25rpx;
+  height:88rpx;
+  z-index: 50;
+  margin: 35rpx auto;
+  position: relative;
+  font-size: 15px;
+}
+
+.blist{
+  font-size: 15px;
+  width: 100%;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rpx;
+  grid-template-areas: 
+  "blt1 blt2"
+  "bbt bbt";
+}
+
+.blt{
+  background-color: #594d61;
+  padding: 10rpx;
+}
+
+.bbt{
+  grid-area: bbt;
+  background-color: #594d61;
+  padding: 10rpx;
+}
+
+.bl{
+  margin: 830rpx auto 0 auto;
+  width: 630rpx;
+  padding: 0;
+}
+
+.stp{
+  position: absolute;
+  top:1150rpx;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

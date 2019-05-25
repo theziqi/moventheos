@@ -1,0 +1,36 @@
+<view class="cu-bar margin-top">
+  <view class='action'>
+    <text class='icon-title text-green'></text>
+    <text class='text-white' style='font-size:18px;font-weight:bold;'>项目针对训练</text>
+  </view>
+</view>
+<view id='itemlist'>
+  <view class='padding bg-gradual-green shadow lii text-center'>
+    <text class='icon-title text-white'></text>1000米
+    <view style='margin-top:15rpx;'><text class='icon-forward text-white'></text></view>
+  </view>
+  <view class='padding bg-gradual-blue shadow lii text-center'>
+    <text class='icon-title text-white'></text>800米
+    <view style='margin-top:15rpx;'><text class='icon-forward text-white'></text></view>
+  </view>
+  <view class='padding bg-gradual-red shadow lii text-center'>
+   <text class='icon-title text-white'></text>引体向上
+   <view style='margin-top:15rpx;'><text class='icon-forward text-white'></text></view>
+  </view>
+  <view class='padding bg-brown shadow lii text-center'>
+    <text class='icon-title text-white'></text>仰卧起坐
+    <view style='margin-top:15rpx;'><text class='icon-forward text-white'></text></view>
+  </view>
+  <view class='padding bg-gradual-purple shadow lii text-center'>
+    <text class='icon-title text-white'></text>立定跳远
+    <view style='margin-top:15rpx;'><text class='icon-forward text-white'></text></view>
+  </view>
+  <view class='padding bg-gradual-pink shadow lii text-center'>
+    <text class='icon-title text-white'></text>坐位体前屈
+    <view style='margin-top:15rpx;'><text class='icon-forward text-white'></text></view>
+  </view>
+  <view class='padding bg-gradual-orange shadow lii text-center'>
+    <text class='icon-title text-white'></text>50米
+    <view style='margin-top:15rpx;'><text class='icon-forward text-white'></text></view>
+  </view>
+</view>

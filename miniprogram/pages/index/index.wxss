@@ -1,0 +1,46 @@
+/**index.wxss**/
+
+page {
+  background: #594d61;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#toplist{
+  margin-top: 15rpx;
+  font-size: 14px;
+  color: white;
+}
+.sexradio{
+  float: left;
+  width: 50%;
+}
+
+.sexcell{
+  padding: 12px 15px;
+  display: flex;
+  background: #fff;
+  line-height: 1.4;
+  font-size: 14px;
+  color: #495060;
+}
+
+.selectrow{
+  box-sizing: border-box;
+  border: 0 solid #e9eaec;
+  border-bottom-width: 1px;
+}
+
+.inputform{
+  margin-top: 10px;
+}
+
+.culist{
+  width: 90%;
+  margin: auto;
+}
+
+.cutitle{
+  text-align: left;
+}

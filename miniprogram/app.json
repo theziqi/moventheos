@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/index",
+    "pages/analyses/index",
+    "pages/column/index",
+    "pages/about/index",
+    "pages/plan/index"
+  ],
+  "window": {
+    "backgroundColor": "#594d61",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#594d61",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#2cb57f",
+    "borderStyle": "white",
+    "backgroundColor": "#594d61",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index_f.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home_f.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

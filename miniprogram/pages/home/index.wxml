@@ -1,0 +1,42 @@
+<view class='cg'>
+  <view class='UCenter-bg bg-green'>
+    <view class="cu-avatar xl round shadow" style="background-image:url(/images/avatar.png);"></view>
+    <view class='text-xl' style='margin-top: 10px;'>My Home</view>
+    <image src='https://image.weilanwl.com/gif/wave.gif' mode='scaleToFill' class='gif-wave'></image>
+  </view>
+
+<view class="cu-bar bg-white">
+    <view class='action'>
+      <view class='icon-title text-green'></view>
+      <view style='padding-left:20rpx;'>查看历史训练成绩</view>
+    </view>
+<view class='icon-right' style='margin-right:50rpx;'></view>
+  </view>
+
+  <view class="cu-bar bg-white">
+    <view class='action'>
+      <view class='icon-title text-green'></view>
+      <view style='padding-left:20rpx;'>查看各项排名</view>
+    </view>
+<view class='icon-right' style='margin-right:50rpx;'></view>
+  </view>
+
+  <view class="cu-bar bg-white" bindtap='clickAbout'>
+    <view class='action'>
+      <view class='icon-title text-green'></view>
+      <view style='padding-left:20rpx;'>关于</view>
+    </view>
+    <view class='icon-right' style='margin-right:50rpx;'></view>
+  </view>
+
+  <view class="cu-bar bg-white">
+    <view class='action'>
+      <view class='icon-title text-green'></view>
+      <view style='padding-left:20rpx;'>意见反馈</view>
+    </view>
+<view class='icon-right' style='margin-right:50rpx;'></view>
+  </view>
+
+  
+</view>
+

@@ -1,0 +1,96 @@
+<view style='background:#594d61;'>
+  
+  <!-- <view class="cu-bar bg-gradual-blue ct">
+    <view class='action sub-title'>
+      <text class='text-xl text-bold text-white'>成绩综合分析</text>
+      <text class='text-ABC text-white'>GRADE</text>
+    </view>
+  </view> -->
+
+ <!-- <view class='taglist'>
+    <view class='cu-tag bg-gradual-red tag radius'>提升难度较大</view>
+    <view class='cu-tag bg-yellow tag radius' style='color:white;'>提升难度一般</view>
+    <view class='cu-tag bg-gradual-green tag radius'>提升难度较小</view>
+  </view>
+-->
+
+  <!--<canvas canvas-id="columnCanvas" class="canvas"></canvas>-->
+  <view id='topTip' class='shadow'><view style='position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);'>距离体测还有{{rDay}}天</view></view>
+
+<view class='taglist'>
+    <view class='cu-tag tag' style='font-size:12px;background:#594d61;color:white;'>提升<text style='font-size:14px;color:red;font-weight:bold'>5分</text>困难程度</view>
+    <view class='cu-tag bg-gradual-green tag radius'>容易</view>
+    <view class='cu-tag bg-yellow tag radius' style='color:white;'>中等</view>
+    <view class='cu-tag bg-gradual-red tag radius'>困难</view>
+  </view>
+
+
+  <view class='cc'>
+    <ec-canvas id="columnCanvas" canvas-id="columnCanvas" ec="{{ ec }}"></ec-canvas>
+  </view>
+
+
+<view class='bg-green bl'>
+<view class='blist'>
+  <view class='blt text-center' style='grid-area: blt1;'><view style='border-width:5px;'><view>now</view>{{userGrade.all}}</view></view>
+  <view class='blt text-center' style='grid-area: blt2;'><view><view>target</view>{{userData.as}}</view></view>
+  <view class='bbt text-center'>提升单项成绩下一个5分仅需<text style='color:#2cb57f;font-size:18px;font-weight:bold;'>少许</text>时间</view>
+</view>
+</view>
+
+<view class='stp text-center'>
+      <button class='cu-btn shadow' style='width:600rpx;height:80rpx;color:#fff;background:#2cb57f;font-size:15px;border-radius: 50rpx;' bindtap='toPlan'>开始你的训练计划吧</button>
+</view>
+
+ <!-- <view class='cg'>
+      <view class="cu-bar">
+        <view class='action'>
+          <text class='icon-warn text-red'></text>
+          <text class='text-grey'>格式 —— “ 项目：原始分/加权分 ”</text>
+        </view>
+      </view>
+
+      <view class="cu-bar" style='animation-name: slide-bottom;'>
+        <view class='action'>
+          <text class='icon-title text-blue'></text>
+          <text class='text-l'>中长跑：{{us.l}}/{{us.l*0.2}}</text>
+        </view>
+      </view>
+
+      <view class="cu-bar">
+        <view class='action'>
+          <text class='icon-title text-blue'></text>
+          <text class='text-l'>引体向上/仰卧起坐：{{us.c}}/{{us.c*0.1}}</text>
+        </view>
+      </view>
+
+      <view class="cu-bar">
+        <view class='action'>
+          <text class='icon-title text-blue'></text>
+          <text class='text-l'>立定跳远：{{us.d}}/{{us.d*0.1}}</text>
+        </view>
+      </view>
+
+      <view class="cu-bar">
+        <view class='action'>
+          <text class='icon-title text-blue'></text>
+          <text class='text-l'>坐位体前屈：{{us.e}}/{{us.e*0.1}}</text>
+        </view>
+      </view>
+
+      <view class="cu-bar">
+        <view class='action'>
+          <text class='icon-title text-blue'></text>
+          <text class='text-l'>短跑：{{us.f}}/{{us.f*0.2}}</text>
+        </view>
+      </view>
+
+      <view class="cu-bar">
+        <view class='action'>
+          <text class='icon-title text-blue'></text>
+          <text class='text-l'>总成绩：{{us.all}}</text>
+        </view>
+
+      </view>
+    </view>-->
+</view>

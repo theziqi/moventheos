@@ -1,0 +1,21 @@
+/* miniprogram/pages/plan/index.wxss */
+page{
+  background-color: #594d61;
+}
+
+#itemlist{
+  display: flex;
+  width: 700rpx;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.lii{
+  font-weight: bold;
+  font-size: 15px;
+  width: 250rpx;
+  height: 130rpx;
+  margin: 40rpx 30rpx;
+  border-radius: 10rpx;
+}
